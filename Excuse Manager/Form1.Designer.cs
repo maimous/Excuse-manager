@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // folder
@@ -50,6 +51,7 @@
             this.folder.TabIndex = 0;
             this.folder.Text = "Folder";
             this.folder.UseVisualStyleBackColor = true;
+            this.folder.Click += new System.EventHandler(this.folder_Click);
             // 
             // save
             // 
@@ -189,6 +191,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
