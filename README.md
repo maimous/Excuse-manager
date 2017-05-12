@@ -14,3 +14,7 @@
 * Add a folderBrowserDialog.
 * Show the folder dialog box with the folder button click.
 * If the dialog result is ok, enable the Save, Open and Random buttons.
+
+&nbsp;
+## 03 Edit the file date label
+* Instead of the third TextBox, the file date for the excuse file is displayed by the use of a Label control with AutoSize set to False and BorderStyle set to Fixed3D.

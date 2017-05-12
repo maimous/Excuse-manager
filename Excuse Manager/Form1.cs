@@ -28,7 +28,7 @@ namespace Excuse_Manager
                 selectedFolder = folderBrowserDialog1.SelectedPath;
                 save.Enabled = true;
                 open.Enabled = true;
-                randomExcuse.Enabled = true;
+                randomExcuse.Enabled = true;                
             }
         }
     }
