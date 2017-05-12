@@ -18,3 +18,7 @@
 &nbsp;
 ## 03 Edit the file date label
 * Instead of the third TextBox, the file date for the excuse file is displayed by the use of a Label control with AutoSize set to False and BorderStyle set to Fixed3D.
+
+&nbsp;
+## 04 Add the Excuse class
+* Add the Excuse class and its properties.
