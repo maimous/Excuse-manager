@@ -35,12 +35,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.description = new System.Windows.Forms.TextBox();
+            this.results = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lastUsed = new System.Windows.Forms.DateTimePicker();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.label5 = new System.Windows.Forms.Label();
+            this.fileDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // folder
@@ -110,19 +110,19 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Last Used";
             // 
-            // textBox1
+            // description
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(467, 24);
-            this.textBox1.TabIndex = 7;
+            this.description.Location = new System.Drawing.Point(146, 26);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(467, 24);
+            this.description.TabIndex = 7;
             // 
-            // textBox2
+            // results
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(467, 24);
-            this.textBox2.TabIndex = 8;
+            this.results.Location = new System.Drawing.Point(146, 65);
+            this.results.Name = "results";
+            this.results.Size = new System.Drawing.Size(467, 24);
+            this.results.TabIndex = 8;
             // 
             // label4
             // 
@@ -133,31 +133,31 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "File Date";
             // 
-            // dateTimePicker1
+            // lastUsed
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(146, 104);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(467, 24);
-            this.dateTimePicker1.TabIndex = 10;
+            this.lastUsed.Location = new System.Drawing.Point(146, 104);
+            this.lastUsed.Name = "lastUsed";
+            this.lastUsed.Size = new System.Drawing.Size(467, 24);
+            this.lastUsed.TabIndex = 10;
             // 
-            // label5
+            // fileDate
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(146, 147);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(467, 24);
-            this.label5.TabIndex = 11;
+            this.fileDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fileDate.Location = new System.Drawing.Point(146, 147);
+            this.fileDate.Name = "fileDate";
+            this.fileDate.Size = new System.Drawing.Size(467, 24);
+            this.fileDate.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 261);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.fileDate);
+            this.Controls.Add(this.lastUsed);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.results);
+            this.Controls.Add(this.description);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -186,12 +186,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox description;
+        private System.Windows.Forms.TextBox results;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker lastUsed;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label fileDate;
     }
 }
 

@@ -33,3 +33,9 @@
 ## 06 Add the Save method in the Excuse class
 * Add the Save method in the Excuse class.
 * Use a `using` statement so that our files will always be closed.
+
+&nbsp;
+## 07 Add the UpdateForm method in the Form
+* Add the UpdateForm method in the Form.
+* The currentExcuse instance of the Excuse class is being stored in the form.
+* The `changed` parameter indicates whether or not the form has changed. The `formChanged` field in the form keeps track of this status.
