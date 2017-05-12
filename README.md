@@ -22,3 +22,9 @@
 &nbsp;
 ## 04 Add the Excuse class
 * Add the Excuse class and its properties.
+
+&nbsp;
+## 05 Add the Excuse class constructors
+* The Excuse class has three overloaded constructors: one for when the form’s first loaded, one for opening up a file, and one for a random excuse.
+* Add the OpenFile method which is called by the constructors to open an excuse.    
+* Use a `using` statements so that our files will always be closed.
