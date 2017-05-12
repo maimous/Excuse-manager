@@ -37,6 +37,17 @@ namespace Excuse_Manager
                 Results = reader.ReadLine();
                 LastUsed = Convert.ToDateTime(reader.ReadLine());
             }
+        }        
+
+        public void Save(string fileName)
+        {
+            using (StreamWriter writer = new StreamWriter(fileName))
+            {
+                writer.WriteLine(Description);
+                writer.WriteLine(Results);
+                writer.WriteLine(LastUsed);
+            }
+
         }
 
     }
