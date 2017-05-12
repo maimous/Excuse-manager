@@ -39,3 +39,7 @@
 * Add the UpdateForm method in the Form.
 * The currentExcuse instance of the Excuse class is being stored in the form.
 * The `changed` parameter indicates whether or not the form has changed. The `formChanged` field in the form keeps track of this status.
+
+&nbsp;
+## 08 Initialize the LastUsed value
+* Initialize the excuse’s LastUsed value in the form’s constructor.

@@ -21,6 +21,7 @@ namespace Excuse_Manager
         public Form1()
         {
             InitializeComponent();
+            currentExcuse.LastUsed = lastUsed.Value;
         }
 
         private void UpdateForm(bool changed)
