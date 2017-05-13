@@ -52,5 +52,25 @@ namespace Excuse_Manager
                 randomExcuse.Enabled = true;                
             }
         }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(description.Text) || String.IsNullOrEmpty(results.Text))
+            {
+                MessageBox.Show("Please specify an excuse and a result",
+                     "Unable to save", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            saveFileDialog1.InitialDirectory = selectedFolder;
+            saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.FileName = description.Text + ".txt";
+            DialogResult result = saveFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                currentExcuse.Save(saveFileDialog1.FileName);
+                UpdateForm(false);
+                MessageBox.Show("Excuse written");
+            }
+        }
     }
 }

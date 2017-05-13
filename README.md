@@ -43,3 +43,12 @@
 &nbsp;
 ## 08 Initialize the LastUsed value
 * Initialize the excuse’s LastUsed value in the form’s constructor.
+
+&nbsp;
+## 09 Add the save button click code
+* Add a saveFileDialog.
+* Show the Save As file dialog box when the save button is clicked.
+* Check that the description and result inputs are filled.
+* Configure the save file folder, filter and name.
+* If the dialog result is ok, save the currentExcuse and update the form.
+* Now a save file can be written but the description and result lines in the file are blank. Changed event handlers for the three inputs need to be added to have that fixed.

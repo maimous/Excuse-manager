@@ -41,6 +41,7 @@
             this.lastUsed = new System.Windows.Forms.DateTimePicker();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.fileDate = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // folder
@@ -62,6 +63,7 @@
             this.save.TabIndex = 1;
             this.save.Text = "Save";
             this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // open
             // 
@@ -192,6 +194,7 @@
         private System.Windows.Forms.DateTimePicker lastUsed;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Label fileDate;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
