@@ -72,5 +72,24 @@ namespace Excuse_Manager
                 MessageBox.Show("Excuse written");
             }
         }
+
+        private void description_TextChanged(object sender, EventArgs e)
+        {
+            currentExcuse.Description = description.Text;
+            UpdateForm(true);
+        }
+
+        private void results_TextChanged(object sender, EventArgs e)
+        {
+            currentExcuse.Results = results.Text;
+            UpdateForm(true);
+        }
+
+        private void lastUsed_ValueChanged(object sender, EventArgs e)
+        {
+            currentExcuse.LastUsed = lastUsed.Value;
+            UpdateForm(true);            
+        }
+        
     }
 }

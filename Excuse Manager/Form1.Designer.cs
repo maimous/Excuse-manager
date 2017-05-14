@@ -118,6 +118,7 @@
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(467, 24);
             this.description.TabIndex = 7;
+            this.description.TextChanged += new System.EventHandler(this.description_TextChanged);
             // 
             // results
             // 
@@ -125,6 +126,7 @@
             this.results.Name = "results";
             this.results.Size = new System.Drawing.Size(467, 24);
             this.results.TabIndex = 8;
+            this.results.TextChanged += new System.EventHandler(this.results_TextChanged);
             // 
             // label4
             // 
@@ -141,6 +143,7 @@
             this.lastUsed.Name = "lastUsed";
             this.lastUsed.Size = new System.Drawing.Size(467, 24);
             this.lastUsed.TabIndex = 10;
+            this.lastUsed.ValueChanged += new System.EventHandler(this.lastUsed_ValueChanged);
             // 
             // fileDate
             // 

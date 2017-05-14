@@ -52,3 +52,12 @@
 * Configure the save file folder, filter and name.
 * If the dialog result is ok, save the currentExcuse and update the form.
 * Now a save file can be written but the description and result lines in the file are blank. Changed event handlers for the three inputs need to be added to have that fixed.
+
+&nbsp;
+## 10 Add event handlers for the inputs
+* Add the code for the TextChanged event for the description input.
+* Add the code for the TextChanged event for the results input.
+* Add the code for the ValueChanged event for the lastUsed input.
+* When any event handler is triggered, that means the excuse has changed, so first we update the Excuse instance and then we call UpdateForm(), add the asterisk to the form’s title bar, and set Changed to true.
+* Passing true to UpdateForm() tells it to just mark the form as changed, but not update the input controls.
+* Now clicking the save button properly saves the changes in the input fields.
