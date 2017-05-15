@@ -61,3 +61,8 @@
 * When any event handler is triggered, that means the excuse has changed, so first we update the Excuse instance and then we call UpdateForm(), add the asterisk to the form’s title bar, and set Changed to true.
 * Passing true to UpdateForm() tells it to just mark the form as changed, but not update the input controls.
 * Now clicking the save button properly saves the changes in the input fields.
+
+&nbsp;
+## 11 Add the CheckChanged method
+* The CheckChanged method checks if there were changes in the form. Its return will be used as a condition in the beginning of the methods for opening an excuse file or for a random excuse click.
+* If there were changes, `MessageBox.Show()` also returns a DialogResult enum that we can check in order to continue or not. 

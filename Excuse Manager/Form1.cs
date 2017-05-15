@@ -90,6 +90,19 @@ namespace Excuse_Manager
             currentExcuse.LastUsed = lastUsed.Value;
             UpdateForm(true);            
         }
-        
+
+        private bool CheckChanged()
+        {
+            if (formChanged)
+            {
+                DialogResult result = MessageBox.Show(
+                      "The current excuse has not been saved. Continue?",
+                       "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.No)
+                    return false;
+            }
+            return true;
+        }
+
     }
 }
