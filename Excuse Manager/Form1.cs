@@ -104,5 +104,20 @@ namespace Excuse_Manager
             return true;
         }
 
+        private void open_Click(object sender, EventArgs e)
+        {
+            if (CheckChanged())
+            {
+                openFileDialog1.InitialDirectory = selectedFolder;
+                openFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                openFileDialog1.FileName = description.Text + ".txt";
+                DialogResult result = openFileDialog1.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    currentExcuse = new Excuse(openFileDialog1.FileName);
+                    UpdateForm(false);
+                }
+            }
+        }
     }
 }

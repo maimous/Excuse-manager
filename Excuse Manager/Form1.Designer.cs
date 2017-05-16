@@ -42,6 +42,7 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.fileDate = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // folder
@@ -74,6 +75,7 @@
             this.open.TabIndex = 2;
             this.open.Text = "Open";
             this.open.UseVisualStyleBackColor = true;
+            this.open.Click += new System.EventHandler(this.open_Click);
             // 
             // randomExcuse
             // 
@@ -153,6 +155,10 @@
             this.fileDate.Size = new System.Drawing.Size(467, 24);
             this.fileDate.TabIndex = 11;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -198,6 +204,7 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Label fileDate;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

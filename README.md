@@ -65,4 +65,11 @@
 &nbsp;
 ## 11 Add the CheckChanged method
 * The CheckChanged method checks if there were changes in the form. Its return will be used as a condition in the beginning of the methods for opening an excuse file or for a random excuse click.
-* If there were changes, `MessageBox.Show()` also returns a DialogResult enum that we can check in order to continue or not. 
+* If there were changes, `MessageBox.Show()` also returns a DialogResult enum that we can check in order to continue or not.
+
+&nbsp;
+## 12 Add the open button click code
+* Add an openFileDialog.
+* When the open button is clicked, perform a conditional check with CheckChanged(), and then show the Open File dialog box.
+* Initial directory is set to selectedFolder, filter to .txt and file name to description text.
+* If the dialog result is ok, the overloaded Excuse constructor that implements the OpenFile method is called, and the file lines' data are set to currentExcuse data which are now being displayed in the input fields.
