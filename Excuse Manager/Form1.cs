@@ -15,9 +15,10 @@ namespace Excuse_Manager
     {
         private string selectedFolder = "";
         private Excuse currentExcuse = new Excuse();
-        private bool formChanged = false;              
+        private bool formChanged = false;
+        Random random = new Random();
 
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -117,6 +118,15 @@ namespace Excuse_Manager
                     currentExcuse = new Excuse(openFileDialog1.FileName);
                     UpdateForm(false);
                 }
+            }
+        }
+
+        private void randomExcuse_Click(object sender, EventArgs e)
+        {
+            if (CheckChanged())
+            {
+                currentExcuse = new Excuse(random, selectedFolder);
+                UpdateForm(false);
             }
         }
     }

@@ -86,6 +86,7 @@
             this.randomExcuse.TabIndex = 3;
             this.randomExcuse.Text = "Random";
             this.randomExcuse.UseVisualStyleBackColor = true;
+            this.randomExcuse.Click += new System.EventHandler(this.randomExcuse_Click);
             // 
             // label1
             // 

@@ -73,3 +73,10 @@
 * When the open button is clicked, perform a conditional check with CheckChanged(), and then show the Open File dialog box.
 * Initial directory is set to selectedFolder, filter to .txt and file name to description text.
 * If the dialog result is ok, the overloaded Excuse constructor that implements the OpenFile method is called, and the file lines' data are set to currentExcuse data which are now being displayed in the input fields.
+
+&nbsp;
+## 13 Add the random excuse code
+* When the random button is clicked, perform a conditional check with CheckChanged().
+* If the dialog result is ok, the overloaded Excuse constructor that implements the OpenFile method with the random and folder parameters is called.
+* The Random Excuse button uses Directory.GetFiles() to read all of the text files in the selected folder into an array, and then chooses a random array index to open.
+* Then the OpenFile method is called in the constructor, and the file lines' data are set to currentExcuse data which are now being displayed in the input fields.
